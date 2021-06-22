@@ -18,7 +18,7 @@ with open('data_file.json','w') as funVarName:
 with open('data_file.json','w') as write_file:
     json.dump(data2, write_file,indent=4)
 
-# json_str = json.dumps(data, indent=4)
-#
-# print(json_str)
-# print('\n\n',type(json_str))
+json_str = json.dumps(data, indent=4)
+
+print(json_str)
+print('\n',type(json_str))

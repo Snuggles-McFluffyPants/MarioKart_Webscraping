@@ -11,10 +11,16 @@ f = open('data_file.json', )
 # a dictionary
 data = json.load(f)
 
-# Iterating through the json
-# list
-for i in data['user']:
-    print(i)
+data.update('user'['colour':'pleasant pink'])
+
+print(data)
+
+
+
+# # Iterating through the json
+# # list
+# for i in data:
+#     print(i)
 
 # Closing file
 f.close()
