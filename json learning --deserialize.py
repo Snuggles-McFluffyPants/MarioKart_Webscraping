@@ -1,26 +1,18 @@
-# Python program to read
-# json file
+# program comes from:
+# https://www.geeksforgeeks.org/deserialize-json-to-object-in-python/
 
 
+# importing the module
 import json
 
-# Opening JSON file
-f = open('data_file.json', )
+# creating the JSON data as a string
+data = '{"Name" : "Romy", "Gender" : "Female"}'
 
-# returns JSON object as
-# a dictionary
-data = json.load(f)
+print("Datatype before deserailization : "
+      + str(type(data)))
 
-data.update('user'['colour':'pleasant pink'])
+# deserailizing the data
+data = json.loads(data)
 
-print(data)
-
-
-
-# # Iterating through the json
-# # list
-# for i in data:
-#     print(i)
-
-# Closing file
-f.close()
+print("Datatype after deserailization : "
+      + str(type(data)))

@@ -8,7 +8,7 @@ data = {"user" :{
 
 data2 = {"user" :{
     "name" : "Sir Fuzzy Balls IV",
-    "age": 22
+    "age": 22,
     }
 }
 
@@ -21,4 +21,4 @@ with open('data_file.json','w') as write_file:
 json_str = json.dumps(data, indent=4)
 
 print(json_str)
-print('\n',type(json_str))
+print(type(json_str))
