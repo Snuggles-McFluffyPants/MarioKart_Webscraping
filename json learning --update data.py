@@ -1,8 +1,11 @@
 import json
 
-a_file = open("data_file.json", "r")
-json_object = json.load(a_file)
-a_file.close()
+try:
+    a_file = open("data_file.json", "r")
+    json_object = json.load(a_file)
+    a_file.close()
+except:
+    json_object = {'user':{}}
 
 json_object['user']["d_size"] = 17
 
